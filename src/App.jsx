@@ -511,9 +511,13 @@ export default function App() {
           {/* Logo Section */}
           <div className="flex justify-center mb-6">
             <img 
-              src="https://iili.io/KGQOvkl.md.png" 
-              alt="WMEBEM Logo" 
+              src="https://raw.githubusercontent.com/shakeymedic/wmem/main/emevidence_logo.png" 
+              alt="EM Evidence logo" 
+              width="80"
+              height="80"
               className="h-20 object-contain"
+              style={{ height: '80px', width: '80px', flexShrink: 0, objectFit: 'contain' }}
+              onError={(e) => { e.currentTarget.style.display = 'none'; }}
             />
           </div>
 
